@@ -1,56 +1,58 @@
-"use server"
-
-import path from "path";
-import Replicate from "replicate";
-import fs from 'fs';
-import archiver from 'archiver';
+// "use server"
+const path = require('path');
+const Replicate = require('replicate');
+const fs = require('fs');
+const archiver = require('archiver');
+// const path = require('path');
 
 const replicate = new Replicate({
-    auth: process.env.REPLICATE_API_TOKEN,
+    auth: "r8_CoDlu9eDR2NlQEbB5JPjpmpKJabCWOs2sF7sk",
 });
 
-async function createZip() {
-    const zekeDir = path.join(__dirname, 'zeke');
-    const output = fs.createWriteStream(path.join(__dirname, 'zeke2.zip'));
-    const archive = archiver('zip', {
-      zlib: { level: 9 } // Sets the compression level.
-    });
-  
-    output.on('close', function() {
-      console.log(archive.pointer() + ' total bytes');
-      console.log('Archiver has been finalized and the output file descriptor has closed.');
-    });
-  
-    archive.on('error', function(err) {
-      throw err;
-    });
-  
+async function zipImagesAndCreateLink() {
+    const inputFolder = path.resolve(__dirname, "your_image_folder");
+    const outputZipFilePath = path.resolve(__dirname, "images.zip");
+
+    // Create an output stream to write the zip file
+    const output = fs.createWriteStream(outputZipFilePath);
+    const archive = archiver('zip', { zlib: { level: 9 } });
+
+    // Pipe the archive data to the output file
     archive.pipe(output);
-    archive.directory(zekeDir, false);
+
+    // Add all files from the input folder to the archive
+    archive.directory(inputFolder, false);
+
+    // Finalize the archive
     await archive.finalize();
+
+    // Print a message indicating the zip file creation
+    console.log(`Images zipped successfully to: ${outputZipFilePath}`);
+
+    // Return the path to the generated zip file
+    return outputZipFilePath;
 }
 
-
-export async function main() {
+async function main() {
 
     // console.log(replicate.hardware.list())
+    const zipFilePath = await zipImagesAndCreateLink();
 
     const models = await replicate.hardware.list()
     console.log(models)
 
-    const create = await replicate.models.create("jeefxm", "boloo", {
-        hardware: "gpu-t4",
+    const create = await replicate.models.create("jeefxm", "boqwweww", {
+        hardware: "gpu-a40-large",
     })
-    await createZip();
 
     const training = await replicate.trainings.create(
         "stability-ai",
         "sdxl",
         "39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b",
         {
-            destination: "jeefxm/boloo",
+            destination: "jeefxm/boqwweww",
             input: {
-                input_images: "zeke2.zip"
+                input_images: zipFilePath
             },
         }
     );

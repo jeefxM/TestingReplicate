@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "finetuning-408411",
+  "private_key_id": "25a30ac009dbe5fb84d676d15ff52ab2220b9801",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDB6HwWPWA0rfTP\nBTDzVVMi0t6QFq+5YGIL9eHxjHiIEboVmzUE+PW9zCW9P+r+uq9028vprj8N3bSp\nq15QG7AyDInvZf4gwI6DJSvok+W0cWdRJE+yIpuIl23m7I6AnGmAsZMKYb+3PFYE\nA3Up1SO+4isjMqYeWntnavG8ibLGwaqerome1o4XgufoRB4FsLOogXzlkxvt1W4T\nxKdQ11zTTGi8UYHGNrsagTlrXlwFwyx5V0DX7zle1ep/HCb72WhqmM9kDRrxnU4d\n2JkUoXGOz2cnsV16uRYlc1xqBMWXgGBSURS0vlb3Wm0rpOqmVjdVsjiPznvlvi9u\nm+H/B0NtAgMBAAECggEACTKSbN6hPoEa1H//SVInL5wXdPeygu/qA/24J3mIKmdx\nhL6tgOHLNuMPo4lRh57KHZhNtN+a5jjkLcvEXTc3AA9oB9w2CzkppARXxRV7fDfd\n1J43joWa4YYnRHW826evpGxSgxf4XJlmzhQY6FtPsalE2QujurBZhqIEEIiVMN1f\n1GGYRnZFCjOlE1wNvrYT6MccTD0Zjm8izK88Pzb/Amy3G2y05YnTxiSCIVifONvg\nwstvv4Wa8LsYEYUGKlpZq/9QYYXAfPpDENn8PlhPECC0f063hL4QVh2f0v4Jmpi4\nPfume95AZ0GMJ4nZDIdGWeBGKXv6IDZEvVOi+VUDyQKBgQDliiH448lELVmMmNiO\nPCbF+bLgS5NlQYu/eJd9Q6S7dfxnCzDHsxOFcEx6glzrVJsV3j/SeGsCLYEk06bd\nvH8/AGskZvvO/sR7ipJmG9cUztw/SNOEpLQ79jui+O2s9jUCT8lWVNb/wHnfRD/7\nD3zZXAnOa79n5sdUVSrC0uNpKQKBgQDYQtgm9TBs+oqXoFWue6QURuWjBFMVxFNo\nalMgqt6LJkhPlgILbQOL+RAY0SFKk/tXIq6+Y5PaG0dE5SxAZdgJJSP+oZAXZUai\n3ruCa/oWHDXyeIFWkjxoB2dGNQS8xLTzIH6wBe2CLKKa5RFQNnoKRZ4sG6lEeOxq\nL6Ol1dQcpQKBgQCU/KW0UNWQZQcc1RCqsaxREBPktelD7dlxPCrH6aIA80IS+BZ/\naGKhWBSr5/W74byP4yP1zqdWUIbkimRixDirgfAJPrbu0jpiHb2MfUGLhgE7Kl/w\nVp+N0/M9gulyPJSHnZYHbSXn9tyj6D7HDHRy+OR8kT85h3eV63nH3u4wkQKBgEBn\nH7HyYNqDflSLZhjRL1ruhiKW/htEXUaCK4FWAXJVE0HIPZGjhGPh5z5MwWpRSY94\nf6upQfW5G+9ThGslKUIH8oE5Ig0llvSX+iVr/I0rF5G++12JrT2ZvtK0pVWGCxFA\ngxnumf2jR0VzpEVMA+odM26VSkJe9KDm0Qho9oMVAoGAB4UbHCAtqzhi2TJCDU+n\nuYKY5uBMowZ++QGuQJyvjZCKJ2wTb9wXFOENSoLrYiimIYdPls8b4eDM8rjjtHqU\nh7Ot+Fb7TPWkXJAx0EcNvvNz/mebkO40XifGc706o3FyhEMHnwT1wP7EP7rJt8S4\nTK3+hj73k+qSl4RT6bFFxS0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "modeltraining@finetuning-408411.iam.gserviceaccount.com",
+  "client_id": "112861137473779555680",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/modeltraining%40finetuning-408411.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
