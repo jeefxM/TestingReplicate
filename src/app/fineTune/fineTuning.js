@@ -4,9 +4,6 @@ const Replicate = require('replicate');
 const fs = require('fs');
 const archiver = require('archiver');
 const {Storage} = require('@google-cloud/storage');
-// import ModelTraining from "../fineTune/ModelTraining.json"
-// const {ModelTraining} = require("../fineTune/ModelTraining.json")
-// const path = require('path');
 
 let projectId = "408411"
 
@@ -75,7 +72,7 @@ async function main() {
     // const models = await replicate.hardware.list()
     // console.log(models)
 
-    const create = await replicate.models.create("jeefxm", "traini", {
+    const create = await replicate.models.create("jeefxm", "model", {
         hardware: "gpu-a40-large",
     })
 
@@ -84,7 +81,7 @@ async function main() {
         "sdxl",
         "39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b",
         {
-            destination: "jeefxm/traini",
+            destination: "jeefxm/model",
             input: {
                 input_images: publicUrl
             },
